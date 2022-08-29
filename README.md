@@ -3,7 +3,8 @@
 ![OctoLamp](OctoLamp.png)
 
 ![https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24](https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24)
-![https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social](https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24)
+![https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social)
+![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24)
 
 OctoLamp is a simple Test API which will get you the sum of 2 numbers.
 
@@ -25,7 +26,7 @@ OctoLamp is a simple Test API which will get you the sum of 2 numbers.
 ---
 
 # How to use
----
+
 ## Run the app
 ```bash
 npm run start
