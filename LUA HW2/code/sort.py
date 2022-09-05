@@ -1,7 +1,7 @@
 import csv
 
 # open the file for reading and writing
-with open('example.csv', mode='r+', newline='') as f:
+with open('auto93.csv', mode='r+', newline='') as f:
 
    # create a reader and writer opbject
     reader, writer = csv.reader(f), csv.writer(f)
