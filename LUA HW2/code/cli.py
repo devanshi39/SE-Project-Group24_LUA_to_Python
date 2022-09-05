@@ -9,12 +9,15 @@ def coerce(s, fun):
 		return s1
 	return int(s) or fun(re.search("^%s*(.-)%s*$",s))
 
+the={}
+re.subn("\n[-][%S]+[%s]+[-][-]([%S]+)[^\n]+=([%S]+)", ,help)
+
 def cli(t):
 	for slot,v in t:
 		v=str(v)
 		for n,x in arg:
 			if x=="-"
-
+	return 
 def o(t):
 	if type(t)!="dict":
 		return str(t)
