@@ -1,9 +1,16 @@
 # This file has all the tests
 import module
+from code.cli import cli
+
+# if __name__ == '__main__':
+#     the = {}
+#     print(cli(t))
 
 def the():
-    oo(the)
-  
+    the = {} # get from Test engine later
+    cli.oo(the)
+    return true
+
 def sym(sym,entropy,mode):
     sym = Sym()
     symbols = ["a","a","a","a","b","b","c"]
@@ -17,7 +24,6 @@ def sym(sym,entropy,mode):
     operation['div'] =  entropy
     oo(operation)
     return (mode =="a" and 1.37) <= (entropy and entropy <= 1.38) 
-
 
 def num():
     num = module.Num()
