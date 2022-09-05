@@ -22,3 +22,10 @@ def o(t, show, u):
 def oo(t):
 	print(o(t))
 	return t
+    
+def per(arr[],pos):
+    if pos == 0:
+        pos = 0.5
+    x = len(arr)
+    pos = ((pos * x) + 0.5) // 1
+    return arr[max(1,min(x, pos))]
