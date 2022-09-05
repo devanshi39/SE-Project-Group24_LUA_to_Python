@@ -1,5 +1,15 @@
 # This file has all the tests
 import module
+from code.cli import cli
+
+# if __name__ == '__main__':
+#     the = {}
+#     print(cli(t))
+
+def the():
+    the = {} # get from Test engine later
+    cli.oo(the)
+    return true
 
 def num():
     num = module.Num()
