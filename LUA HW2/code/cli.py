@@ -15,7 +15,7 @@ def cli(t):
 		for n,x in arg:
 			if x=="-"
 
-def o(t, show, u):
+def o(t):
 	if type(t)!="dict":
 		return str(t)
 		def show(k,v):
