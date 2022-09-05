@@ -1,4 +1,14 @@
 #cli functions
+import re
+def coerce(s, fun):
+	def fun(s1):
+		if s1=="true":
+			return true
+		else if s1=="false":
+			return false
+		return s1
+	return int(s) or fun(re.search("^%s*(.-)%s*$",s))
+
 def cli(t):
 	for slot,v in t:
 		v=str(v)
