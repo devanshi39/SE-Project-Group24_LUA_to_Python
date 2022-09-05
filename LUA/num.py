@@ -1,3 +1,5 @@
+import math
+
 class Num:
     def __init__(self, c, s):
         self.n = 0
