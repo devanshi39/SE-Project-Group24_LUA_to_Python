@@ -11,8 +11,9 @@ class Misc:
             the[k]=self.coerce(x)
         pattern = r"-(\w+)[\s]*--[\s]*(\w+)[\s]*[^=]*[\s]*=[\s]*(.*)"
         re.sub(pattern, append_the , help)
+        self.cli(the)
 
-    def coerce(self, s, fun):
+    def coerce(self, s):
         def fun(s1):
             if s1=="true":
                 return True
@@ -22,14 +23,14 @@ class Misc:
         if s.isnumeric():
             return int(s)
         else:
-            fun(s)
+            return fun(s)
 
     def cli(self, t):
         for slot in t:
             v = str(t[slot])
             n = 0
             for x in sys.argv:
-                if n != 0:
+                if n > 0:
                     if x == "-" + slot[0] or x == "--" + slot:
                         if v == "False":
                             v = "true"
@@ -62,8 +63,11 @@ class Misc:
             u.append(show(k,t[k]))
         if len(t)==0:
             u.sort()
-        return u.join(" ")
+        return " ".join(u)
 
     def oo(self, t):
         print(self.o(t))
         return t
+
+
+misc = Misc()
