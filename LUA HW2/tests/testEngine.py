@@ -5,7 +5,7 @@ class Eg:
     failure = 0
     
     def BAD(self):
-        print(eg.dont.have.this.field)
+        print("eg dont have this field")
 
     def LIST(self):
         t={}; 
