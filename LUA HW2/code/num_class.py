@@ -24,16 +24,15 @@ class Num:
             self.n = self.n+1
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)
-            if len(self._has) < the.nums:
-                pos = 1 + len(self._has)
+            if len(self._has) < the["nums"]:
+                self._has.append(v)
             else:
-                pos = random.randint(0,len(self._has))
-            if pos:
+                pos = random.randint(0,len(self._has)-1)
                 self.isSorted = False
-                self._has[pos] = int(v)
+                self._has[pos] = v
 
-    def deviation(self):
-        return (per (self.nums(),0.9)-per(self.nums(),0,.1))/2.58
+    def div(self):
+        return (per (self.nums(),0.9)-per(self.nums(),0.1))/2.58
 
-    def median(self):
+    def mid(self):
         return per(self.nums(), 0.5)

@@ -5,7 +5,7 @@ class Sym:
         self.n = 0
         self.at = c
         self.name = s
-        self._has = []
+        self._has = dict()
 
     def add(self, v):
         if v!="?":
