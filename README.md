@@ -3,6 +3,7 @@
 ![OctoLamp](OctoLamp.png)
 
 ![https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24](https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24)
+[![GitHub issues](https://img.shields.io/github/issues/devanshi39/SE-Project-Group24)](https://github.com/devanshi39/SE-Project-Group24/issues)
 ![https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social)
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24)
 ![NPM](https://img.shields.io/npm/l/npm)
