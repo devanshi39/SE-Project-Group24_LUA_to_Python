@@ -6,6 +6,7 @@
 ![https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social](https://img.shields.io/github/forks/devanshi39/SE-Project-Group24?style=social)
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24)
 ![NPM](https://img.shields.io/npm/l/npm)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
 
 OctoLamp is a simple Test API which will get you the sum of 2 numbers.
 
