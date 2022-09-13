@@ -22,5 +22,5 @@ class Cols:
                     Misc.push(self.y, col)
                 else:
                     push(self.x, col)
-            else re.search("!$", s):
-                self.klass = col
+                if re.search("!$", s):
+                    self.klass = col
