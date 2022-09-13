@@ -17,7 +17,7 @@ class Cols:
             else
                 col = push(self.all, Sym(c,s))
             if not re.search(":$", s):
-                if re.search("[!+-]", s):
+                if re.search("[!+-]$", s):
                     push(self.y, col)
                 else:
                     push(self.x, col)
