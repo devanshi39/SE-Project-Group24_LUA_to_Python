@@ -108,3 +108,4 @@ eg["sym"]= sym(),
 eg["num"]= num(),
 eg["bignum"]= bignum()
 eg["csv"]= csv()
+eg["data"]= data()
