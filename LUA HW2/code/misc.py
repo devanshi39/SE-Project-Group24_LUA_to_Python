@@ -48,6 +48,14 @@ class Misc:
             exit(help)
         return t
 
+    def push(self,t,x):
+        # t[len(t)+1] = x if t is dictionary
+        t.append(x) # if t is list
+        return x
+
+    def csv(self,fname,fun):
+        # write later   
+
     def o(self, t):
         if type(t)!=dict:
             return str(t)
