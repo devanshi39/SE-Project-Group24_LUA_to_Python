@@ -93,12 +93,16 @@ def data():
 def stats():
   # Created a Data class object
   d = Data(auto93.csv)
+  mis = misc(auto93.csv)
   with open('auto93.csv', 'r') as f:
     reader = csv.reader(f, delimiter=',')
     for row in reader:
         for i in range(len(row)):
             columns[i].append(row[i])  
-    
+   print("xmid", mis.o( d.stats(2,d.cols.x, mid)))
+   print("xdiv", mis.o( d.stats(3,d.cols.x, div)))
+   print("ymid", mis.o( d.stats(2,d.cols.y, mid)))
+   print("ydiv", mis.o( d.stats(3,d.cols.y, div)))
     
     
 def ALL():
