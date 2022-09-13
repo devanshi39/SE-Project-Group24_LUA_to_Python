@@ -1,4 +1,5 @@
 import random
+import csv
 from num_class import Num
 from sym_class import Sym
 from misc import the
@@ -72,6 +73,14 @@ def bignum():
     misc.oo(num.nums())
     return 32==num._has
 
+
+def csv():
+    with open("auto93.csv", "r") as f:
+        reader = csv.reader(f, delimiter="\t")
+        for i, line in enumerate(reader):
+          print ('line[{}] = {}'.format(i, line))
+
+
 def ALL():
     fails=0
     for k in LIST():
@@ -89,3 +98,4 @@ eg["the"]= the_func(),
 eg["sym"]= sym(),
 eg["num"]= num(),
 eg["bignum"]= bignum()
+eg["csv"]= csv()
