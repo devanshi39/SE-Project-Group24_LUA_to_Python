@@ -90,6 +90,17 @@ def data():
   print(header)
   print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
 
+def stats():
+  # Created a Data class object
+  d = Data(auto93.csv)
+  with open('auto93.csv', 'r') as f:
+    reader = csv.reader(f, delimiter=',')
+    for row in reader:
+        for i in range(len(row)):
+            columns[i].append(row[i])  
+    
+    
+    
 def ALL():
     fails=0
     for k in LIST():
