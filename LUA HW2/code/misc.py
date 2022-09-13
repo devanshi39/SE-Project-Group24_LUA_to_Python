@@ -77,5 +77,8 @@ class Misc:
         print(self.o(t))
         return t
 
+    def rnd(self, x, places):
+        mult = pow(10, places or 2)
+        return math.floor(x * mult + 0.5) / mult 
 
 misc = Misc()
