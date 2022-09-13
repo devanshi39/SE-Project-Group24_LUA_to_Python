@@ -2,8 +2,7 @@ import random
 import csv
 from num_class import Num
 from sym_class import Sym
-from misc import the
-from misc import misc
+from misc import *
 
 eg={}
 
@@ -41,7 +40,7 @@ def LS():
 
 def the_func():
     print("Values in the : ",end="")
-    misc.oo(the)
+    Misc.oo(the)
     return True
 
 def sym():
@@ -52,7 +51,7 @@ def sym():
     mode = sym.mid()
     entropy = sym.div()
     entropy = 1000*entropy//1/1000
-    misc.oo({"mid":mode,"div":entropy})
+    Misc.oo({"mid":mode,"div":entropy})
     return (mode =="a" and 1.37) <= (entropy and entropy <= 1.38) 
 
 def num():
@@ -70,7 +69,7 @@ def bignum():
     the["nums"] = 32
     for i in range(1,1001):
         num.add(i)
-    misc.oo(num.nums())
+    Misc.oo(num.nums())
     return 32==num._has
 
 
@@ -92,17 +91,12 @@ def data():
 
 def stats():
   # Created a Data class object
-  d = Data(auto93.csv)
-  mis = misc(auto93.csv)
   with open('auto93.csv', 'r') as f:
-    reader = csv.reader(f, delimiter=',')
-    for row in reader:
-        for i in range(len(row)):
-            columns[i].append(row[i])  
-   print("xmid", mis.o( d.stats(2,d.cols.x, mid)))
-   print("xdiv", mis.o( d.stats(3,d.cols.x, div)))
-   print("ymid", mis.o( d.stats(2,d.cols.y, mid)))
-   print("ydiv", mis.o( d.stats(3,d.cols.y, div)))
+    reader = csv.reader(f, delimiter=',') 
+   print("xmid", Misc.o( d.stats(2,d.cols.x, mid)))
+   print("xdiv", Misc.o( d.stats(3,d.cols.x, div)))
+   print("ymid", Misc.o( d.stats(2,d.cols.y, mid)))
+   print("ydiv", Misc.o( d.stats(3,d.cols.y, div)))
     
     
 def ALL():

@@ -2,6 +2,14 @@ from help import help
 import re
 import sys
 
+settings = {
+    "nums": 512,
+    "seed": 10019,
+    "dump": False,
+    "file": "../data/auto93.csv",
+    "eg": None,
+    "sep": ",",
+}
 the = {}
 class Misc:
     def __init__(self):
@@ -79,6 +87,19 @@ class Misc:
 
     def rnd(self, x, places):
         mult = pow(10, places or 2)
-        return math.floor(x * mult + 0.5) / mult 
+        return math.floor(x * mult + 0.5) / mult
+    
+    def csv(fname, sep=None, src=None, s=None, t=None):
+    print(config.settings)
+    sep = config.settings["sep"]
+    with open(fname) as src:
+        while s := src.readline().rstrip():
+            t = {}
+            for y in s.split(sep):
+                print(y)
+                try:
+                    t[1 + len(t)] = coerce(y)
+                except:
+                    pass
 
 misc = Misc()
