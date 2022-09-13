@@ -2,6 +2,7 @@ import math
 import random
 from misc import csv
 from misc import push
+from misc import rnd
 from cols_class import Cols
 from row_class import Row
 
