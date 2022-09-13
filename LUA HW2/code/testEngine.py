@@ -84,9 +84,9 @@ def data():
   # Created a Data class object
   d = Data(auto93.csv)
   with open('auto93.csv') as f:
-        reader = csv.reader(f)
-        header = next(reader)
-        data = [row for row in reader]
+      reader = csv.reader(f)
+      header = next(reader)
+      data = [row for row in reader]
   print(header)
   print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
 
