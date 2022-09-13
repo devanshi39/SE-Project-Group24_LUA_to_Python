@@ -3,7 +3,7 @@ import re
 from num_class import Num
 from sym_class import Sym
 
-class Col:
+class Cols:
     def __init__(self, names = {}):
         self.names = names
         self.all = []
