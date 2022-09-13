@@ -15,9 +15,9 @@ class Cols:
         for c, s in names.items():
             if re.search("^[A-Z]*", s):
                 col = Misc.push(self.all, Num(c,s))
-            else
+            else:
                 col = push(self.all, Sym(c,s))
-            if !re.search(":$", s):
+            if not re.search(":$", s):
                 if re.search("[!+-]$", s):
                     Misc.push(self.y, col)
                 else:
