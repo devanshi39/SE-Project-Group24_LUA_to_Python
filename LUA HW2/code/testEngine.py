@@ -23,7 +23,7 @@ def runs(k):
     print("!!!!!!", k)
 
 def BAD():
-    print("eg dont have this field")
+    print("eg doesn't have this field")
     return
 
 def LIST():
