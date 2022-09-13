@@ -98,3 +98,4 @@ eg["the"]= the_func(),
 eg["sym"]= sym(),
 eg["num"]= num(),
 eg["bignum"]= bignum()
+eg["csv"]= csv()
