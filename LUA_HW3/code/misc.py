@@ -87,16 +87,16 @@ class Misc:
         return math.floor(x * mult + 0.5) / mult
     
     def csv(fname, sep=None, src=None, s=None, t=None):
-    print(config.settings)
-    sep = config.settings["sep"]
-    with open(fname) as src:
-        while s := src.readline().rstrip():
-            t = {}
-            for y in s.split(sep):
-                print(y)
-                try:
-                    t[1 + len(t)] = coerce(y)
-                except:
-                    pass
+        print(config.settings)
+        sep = config.settings["sep"]
+        with open(fname) as src:
+            while s := src.readline().rstrip():
+                t = {}
+                for y in s.split(sep):
+                    print(y)
+                    try:
+                        t[1 + len(t)] = coerce(y)
+                    except:
+                        pass
 
 misc = Misc()
