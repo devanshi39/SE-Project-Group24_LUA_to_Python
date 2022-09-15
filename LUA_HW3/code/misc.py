@@ -59,10 +59,7 @@ class Misc:
     def push(self,t,x):
         # t[len(t)+1] = x if t is dictionary
         t.append(x) # if t is list
-        return x
-
-    def csv(self,fname,fun):
-        # write later   
+        return x   
 
     def o(self, t):
         if type(t)!=dict:
