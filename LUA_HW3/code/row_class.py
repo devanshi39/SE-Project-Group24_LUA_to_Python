@@ -5,6 +5,3 @@ class Row:
         self.cells = t
         self.cooked = copy.deepcopy(t)
         self.isEvaled = False
-        
-        `
-    
