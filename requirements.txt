@@ -1,7 +1,5 @@
-beautifulsoup4==4.6.3
 Flask==1.0.2
 jupyter-client==5.2.3
 jupyter-console==5.2.0
 jupyter-core==4.4.0
-matplotlib==2.2.2
 virtualenv==16.0.0

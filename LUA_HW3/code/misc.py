@@ -1,4 +1,5 @@
 from help import help
+import math
 import re
 import sys
 
@@ -59,10 +60,7 @@ class Misc:
     def push(self,t,x):
         # t[len(t)+1] = x if t is dictionary
         t.append(x) # if t is list
-        return x
-
-    def csv(self,fname,fun):
-        # write later   
+        return x   
 
     def o(self, t):
         if type(t)!=dict:
@@ -89,17 +87,17 @@ class Misc:
         mult = pow(10, places or 2)
         return math.floor(x * mult + 0.5) / mult
     
-    def csv(fname, sep=None, src=None, s=None, t=None):
-    print(config.settings)
-    sep = config.settings["sep"]
-    with open(fname) as src:
-        while s := src.readline().rstrip():
-            t = {}
-            for y in s.split(sep):
-                print(y)
-                try:
-                    t[1 + len(t)] = coerce(y)
-                except:
-                    pass
+    def csv(self, fname, sep=None, src=None, s=None, t=None):
+        #print(config.settings)
+        sep = settings["sep"]
+        with open(fname) as src:
+            while s := src.readline().rstrip():
+                t = {}
+                for y in s.split(sep):
+                    print(y)
+                    try:
+                        t[1 + len(t)] = self.coerce(y)
+                    except:
+                        pass
 
 misc = Misc()
