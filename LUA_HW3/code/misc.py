@@ -96,7 +96,7 @@ class Misc:
                 for y in s.split(sep):
                     print(y)
                     try:
-                        t[1 + len(t)] = coerce(y)
+                        t[1 + len(t)] = self.coerce(y)
                     except:
                         pass
 
