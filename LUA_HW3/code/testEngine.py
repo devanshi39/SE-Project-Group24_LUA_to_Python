@@ -90,13 +90,13 @@ def data():
   print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
 
 def stats():
-  # Created a Data class object
-  with open('auto93.csv', 'r') as f:
-    reader = csv.reader(f, delimiter=',') 
-   print("xmid", Misc.o( d.stats(2,d.cols.x, mid)))
-   print("xdiv", Misc.o( d.stats(3,d.cols.x, div)))
-   print("ymid", Misc.o( d.stats(2,d.cols.y, mid)))
-   print("ydiv", Misc.o( d.stats(3,d.cols.y, div)))
+    # Created a Data class object
+    with open('auto93.csv', 'r') as f:
+        reader = csv.reader(f, delimiter=',') 
+    print("xmid", Misc.o( d.stats(2,d.cols.x, mid)))
+    print("xdiv", Misc.o( d.stats(3,d.cols.x, div)))
+    print("ymid", Misc.o( d.stats(2,d.cols.y, mid)))
+    print("ydiv", Misc.o( d.stats(3,d.cols.y, div)))
     
     
 def ALL():
