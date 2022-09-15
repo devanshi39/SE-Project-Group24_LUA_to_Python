@@ -8,6 +8,8 @@
 ![https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24](https://img.shields.io/github/languages/code-size/devanshi39/SE-Project-Group24)
 ![NPM](https://img.shields.io/npm/l/npm)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
+#![example branch parameter](https://github.com/github/docs/actions/workflows/python-app.yml/badge.svg?branch=main)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/devanshi39/SE-Project-Group24/python-app.yml/main)
 
 OctoLamp is a simple Test API which will get you the sum of 2 numbers.
 
