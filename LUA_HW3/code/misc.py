@@ -87,7 +87,7 @@ class Misc:
         mult = pow(10, places or 2)
         return math.floor(x * mult + 0.5) / mult
     
-    def csv(fname, sep=None, src=None, s=None, t=None):
+    def csv(self, fname, sep=None, src=None, s=None, t=None):
         #print(config.settings)
         sep = settings["sep"]
         with open(fname) as src:
