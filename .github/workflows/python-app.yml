@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Indranil_SE-1" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "Indranil_SE-1" ]
 
 permissions:
   contents: read
