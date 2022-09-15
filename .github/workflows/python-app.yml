@@ -5,9 +5,9 @@ name: Python application test
 
 on:
   push:
-    branches: [ "Indranil_SE-1" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "Indranil_SE-1" ]
+    branches: [ "main" ]
 
 permissions:
   contents: read
