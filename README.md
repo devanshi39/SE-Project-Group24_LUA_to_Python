@@ -1,4 +1,4 @@
-# SE-Project-Group24
+# SE-ConvLua-Group24
 ---
 ![ConvLua](ConvLua.png)
 
@@ -10,14 +10,14 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
 ![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24/actions/workflows/python-app.yml/badge.svg?branch=main)
 
-ConvLua is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
+ConvLua is a homework project repository for Group 24's CSC 510, Software Engineering Class. The folders are organized in the following manner:
 LUA HW3 contains all of the primary directories and files. It contains the following files and folders: 
 It contains the following files and folders: 
 
 1. code: This directory contains all of the.py files that declare the LUA classes in Python. Some examples include cols class.py, data class.py, row class.py, and so on.
 2. data: This directory contains the homework dataset, "auto 93.csv." The data is in the format of a csv file. 
-3. tests: 
-4. README.md
+3. tests: This directory contains the primary testing file, testEngine.py, as well as the init.py file.
+4. README.md: This is the README.
 
 ### Installation
 
