@@ -23,14 +23,15 @@ def runs(k):
         elif status == None:
             message = "CRASH"
         else:
+            status = True
             message = "FAIL"
     except:
         status = False
         message = "CRASH"
     for t in old:
         the[t]=old[t]
-    print("-"*50)
-    print("!!!!!", message, k, status)
+    print("\n!!!!!", message, k, status)
+    print(("-"*50)+"\n")
     return status
 
 def BAD():
@@ -102,13 +103,12 @@ def data():
   print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
 
 def stats():
-    # Created a Data class object
     with open('auto93.csv', 'r') as f:
         reader = csv.reader(f, delimiter=',') 
-    print("xmid", Misc.o( d.stats(2,d.cols.x, mid)))
-    print("xdiv", Misc.o( d.stats(3,d.cols.x, div)))
-    print("ymid", Misc.o( d.stats(2,d.cols.y, mid)))
-    print("ydiv", Misc.o( d.stats(3,d.cols.y, div)))
+        print("xmid", o( d.stats(2,d.cols.x, mid)))
+        print("xdiv", o( d.stats(3,d.cols.x, div)))
+        print("ymid", o( d.stats(2,d.cols.y, mid)))
+        print("ydiv", o( d.stats(3,d.cols.y, div)))
     
     
 def ALL():
@@ -118,7 +118,6 @@ def ALL():
         if task != "ALL":
             if not runs(task):
                 fails = fails + 1
-    print("Total fails are",fails)
     return True
 
 eg["BAD"]= BAD,
@@ -131,3 +130,4 @@ eg["num"]= num,
 eg["bignum"]= bignum,
 eg["csv"]= CSV,
 eg["data"]= data
+eg["stats"]= stats
