@@ -11,19 +11,26 @@ eg={}
 
 
 def runs(k):
-    if not eg[k]:
+    if k not in eg:
         return
     old = {}
     for t in the:
         old[t]=the[t]
     try:
         status = eg[k][0]()
-        print("-"*50)
-        print(k, status)
+        if status == True:
+            message = "PASS"
+        elif status == None:
+            message = "CRASH"
+        else:
+            message = "FAIL"
     except:
         status = False
+        message = "CRASH"
     for t in old:
         the[t]=old[t]
+    print("-"*50)
+    print("!!!!!", message, k, status)
     return status
 
 def BAD():
@@ -56,8 +63,8 @@ def sym():
     mode = sym.mid()
     entropy = sym.div()
     entropy = 1000*entropy//1/1000
-    CLI.oo({"mid":mode,"div":entropy})
-    return (mode =="a" and 1.37) <= (entropy and entropy <= 1.38) 
+    oo({"mid":mode,"div":entropy})
+    return (mode =="a" and 1.37 <= entropy and entropy <= 1.38) 
 
 def num():
     num = Num()
