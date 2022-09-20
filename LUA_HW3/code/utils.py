@@ -6,7 +6,7 @@ def o(t):
         return str(t)
     def show(k,v):
         if "^_" not in str(k):
-            v=self.o(v)
+            v=o(v)
             if len(t)==0:
                 return str(k)+" "+str(v)
             else:
