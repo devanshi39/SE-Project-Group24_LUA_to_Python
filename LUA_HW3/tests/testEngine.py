@@ -1,10 +1,11 @@
 import random
 import csv
 import sys
-sys.path.append('../code')
+sys.path.append(sys.path[0]+'\\..\\code\\')
 from num_class import Num
 from sym_class import Sym
 from misc import *
+from utils import *
 
 eg={}
 
@@ -16,12 +17,14 @@ def runs(k):
     for t in the:
         old[t]=the[t]
     try:
-        eg[k]
+        status = eg[k][0]()
+        print("-"*50)
+        print(k, status)
     except:
-        print('error')
+        status = False
     for t in old:
         the[t]=old[t]
-    print("!!!!!!", k)
+    return status
 
 def BAD():
     print("eg doesn't have this field")
@@ -42,7 +45,7 @@ def LS():
 
 def the_func():
     print("Values in the : ",end="")
-    Misc.oo(the)
+    oo(the)
     return True
 
 def sym():
@@ -53,7 +56,7 @@ def sym():
     mode = sym.mid()
     entropy = sym.div()
     entropy = 1000*entropy//1/1000
-    Misc.oo({"mid":mode,"div":entropy})
+    CLI.oo({"mid":mode,"div":entropy})
     return (mode =="a" and 1.37) <= (entropy and entropy <= 1.38) 
 
 def num():
@@ -71,11 +74,11 @@ def bignum():
     the["nums"] = 32
     for i in range(1,1001):
         num.add(i)
-    Misc.oo(num.nums())
-    return 32==num._has
+    oo(num.nums())
+    return len(num._has) == 32
 
 
-def csv():
+def CSV():
     with open("auto93.csv", "r") as f:
         reader = csv.reader(f, delimiter="\t")
         for i, line in enumerate(reader):
@@ -103,20 +106,21 @@ def stats():
     
 def ALL():
     fails=0
-    for k in LIST():
-        if k != "ALL":
-            print("\n---------------------")
-            if not runs(k):
-                fails = fails+ 1
+    l = LIST()
+    for task in l:
+        if task != "ALL":
+            if not runs(task):
+                fails = fails + 1
+    print("Total fails are",fails)
     return True
 
-eg["BAD"]= BAD(),
-eg["LIST"]= LIST(),
-eg["LS"]= LS(),
-eg["ALL"]= ALL(),
-eg["the"]= the_func(),
-eg["sym"]= sym(),
-eg["num"]= num(),
-eg["bignum"]= bignum()
-eg["csv"]= csv()
-eg["data"]= data()
+eg["BAD"]= BAD,
+eg["LIST"]= LIST,
+eg["LS"]= LS,
+eg["ALL"]= ALL,
+eg["the"]= the_func,
+eg["sym"]= sym,
+eg["num"]= num,
+eg["bignum"]= bignum,
+eg["csv"]= CSV,
+eg["data"]= data
