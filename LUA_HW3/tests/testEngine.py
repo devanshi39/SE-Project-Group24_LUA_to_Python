@@ -52,7 +52,6 @@ def LS():
     return True
 
 def the_func():
-    print("Values in the : ",end="")
     oo(the)
     return True
 
