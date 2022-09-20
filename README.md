@@ -11,6 +11,12 @@
 ![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24/actions/workflows/python-app.yml/badge.svg?branch=main)
 
 OctoLamp is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
+LUA HW3 contains all of the primary directories and files. It contains the following files and folders: 
+It contains the following files and folders: 
+a)code
+b)data
+c)tests
+d)README.md
 
 ### Installation
 
