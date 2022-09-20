@@ -10,7 +10,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
 ![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24/actions/workflows/python-app.yml/badge.svg?branch=main)
 
-OctoLamp is a simple Test API which will get you the sum of 2 numbers.
+OctoLamp is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
 
 ### Installation
 
