@@ -7,10 +7,7 @@ def o(t):
     def show(k,v):
         if "^_" not in str(k):
             v=o(v)
-            if len(t)==0:
-                return str(k)+" "+str(v)
-            else:
-                return str(v)
+            return str(k)+" : "+str(v)
     u=[]
     for k in t:
         u.append(show(k,t[k]))
