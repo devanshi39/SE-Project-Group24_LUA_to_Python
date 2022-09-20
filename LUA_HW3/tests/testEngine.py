@@ -1,5 +1,7 @@
 import random
 import csv
+import sys
+sys.path.append('../code')
 from num_class import Num
 from sym_class import Sym
 from misc import *
