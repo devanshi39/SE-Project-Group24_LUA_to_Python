@@ -13,11 +13,15 @@
 OctoLamp is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
 LUA HW3 contains all of the primary directories and files. It contains the following files and folders: 
 It contains the following files and folders: 
-a)code
+'''sh
+a)code: This directory contains all of the.py files that declare the LUA classes in Python. Some examples include cols class.py, data class.py, row class.py, and so on.
+'''
 b)data
+'''sh
 c)tests
+'''
 d)README.md
-
+'''sh
 ### Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
