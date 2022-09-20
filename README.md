@@ -1,6 +1,6 @@
 # SE-Project-Group24
 ---
-![OctoLamp](OctoLamp.png)
+![ConvLua](ConvLua.png)
 
 ![https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24](https://img.shields.io/github/package-json/v/devanshi39/SE-Project-Group24)
 [![GitHub issues](https://img.shields.io/github/issues/devanshi39/SE-Project-Group24)](https://github.com/devanshi39/SE-Project-Group24/issues)
@@ -10,7 +10,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
 ![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24/actions/workflows/python-app.yml/badge.svg?branch=main)
 
-OctoLamp is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
+ConvLua is a homework project repository for Group 24's CSC 502, Software Engineering Class. The folders are organized in the following manner:
 LUA HW3 contains all of the primary directories and files. It contains the following files and folders: 
 It contains the following files and folders: 
 
