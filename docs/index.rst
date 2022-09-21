@@ -6,8 +6,8 @@
 Welcome to ConvLua's documentation!
 ===================================
 
-.. include:: src.rst
-
+.. include:: code.rst
+.. include:: tests.rst
 
 Indices and tables
 ==================

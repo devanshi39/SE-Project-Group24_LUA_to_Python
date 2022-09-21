@@ -13,6 +13,19 @@ the = {
 }
 
 def coerce(s):
+    """
+        Converts value to Boolean, if value is not a boolean string it converts it to integer.
+        
+        Parameters
+        ----------
+        s : str
+            value to be converted to boolean or integer
+       
+        Return
+        ------
+        int
+        Bool
+        """
     def fun(s1):
         if s1=="true":
             return True
@@ -25,6 +38,12 @@ def coerce(s):
         return fun(s)
 
 class CLI:
+    """
+   This class parses everything to the coerce() function.
+
+    ...
+
+    """
     def __init__(self):
         def append_the(tuple):
             k=tuple.group(2)
@@ -35,6 +54,18 @@ class CLI:
         self.cli(the)
 
     def cli(self, t):
+        """
+        This method calls the coerce() function on every value in t.
+
+        Parameters
+        ----------
+        t : list
+            t is a list containing strings.
+        
+        Returns
+        -------
+        list
+        """
         for slot in t:
             v = str(t[slot])
             n = 0
@@ -58,7 +89,15 @@ class CLI:
         return t
 
     def push(self,t,x):
+         
         # t[len(t)+1] = x if t is dictionary
+        """
+         Misc function to push something to the end of a list
+        
+        Returns
+        -------
+        pushed element
+        """
         t.append(x) # if t is list
         return x
    

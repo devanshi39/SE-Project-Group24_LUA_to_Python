@@ -1,3 +1,10 @@
+"""
+Help
+-------------------------
+It is a header string showing help, from which we build our 'the' settings object
+
+"""
+
 help=" \n\
 CSV : summarized csv file \n\
 (c) 2022 Tim Menzies <timm@ieee.org> BSD-2 license\n\

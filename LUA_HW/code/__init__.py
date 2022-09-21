@@ -2,7 +2,7 @@
     ConvLua
     ----------
 
-    Converted Lua to python
+    This module converts Lua to python
 """
 
 print("this is the code init function")

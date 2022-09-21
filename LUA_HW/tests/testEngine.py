@@ -11,6 +11,21 @@ eg={}
 
 
 def runs(k):
+    """
+    Resets random number seed before running something ,Cache the detaults settings and restore them after the test
+    Print error messages or stack dumps as required or Return true if this all went well. 
+
+    Parameters
+    ----------
+    k : dict
+        the['eg']
+    p   : int
+        position from which to get the number in the list    
+    
+    Returns
+    -------
+    Bool
+    """
     if k not in eg:
         return
     old = {}
@@ -35,10 +50,24 @@ def runs(k):
     return status
 
 def BAD():
+    """
+    To test if the test still happens if something crashes
+    
+    Returns
+    -------
+    None
+    """
     print("eg doesn't have this field")
     return
 
 def LIST():
+    """
+    Sort all test names
+        
+    Returns
+    -------
+    list
+    """
     t=[] 
     for k in eg:
         t.append(k)
@@ -46,16 +75,37 @@ def LIST():
     return t
 
 def LS():
+    """
+    List all test names
+    
+    Returns
+    -------
+    Bool
+    """
     print("\nExamples lua csv −e ...")
     for k in LIST():
         print("\t"+k)
     return True
 
 def the_func():
+    """
+    Test for the
+    
+    Returns
+    -------
+    Bool
+    """
     oo(the)
     return True
 
 def sym():
+    """
+    Test for symbols
+    
+    Returns
+    -------
+    Bool
+    """
     sym = Sym()
     symbols = ["a","a","a","a","b","b","c"]
     for x in symbols:
@@ -67,6 +117,13 @@ def sym():
     return (mode =="a" and 1.37 <= entropy and entropy <= 1.38) 
 
 def num():
+    """
+    Test for numbers
+    
+    Returns
+    -------
+    Bool
+    """
     num = Num()
     for i in range(1,101):
         num.add(i)
@@ -76,6 +133,13 @@ def num():
     return (50<=mid and mid<=52 and 30.5<div and div<32)
 
 def bignum():
+    """
+    Nums store only a sample of the numbers added to it (and that storage is done such that the kept numbers span the range of inputs).
+    
+    Returns
+    -------
+    Bool
+    """
     # Created a Num class object
     num = Num()
     the["nums"] = 32
@@ -86,22 +150,44 @@ def bignum():
 
 
 def CSV():
+    """
+    To show that we can read a csv file
+    
+    Returns
+    -------
+    Bool
+    """
     with open("auto93.csv", "r") as f:
         reader = csv.reader(f, delimiter="\t")
         for i, line in enumerate(reader):
           print ('line[{}] = {}'.format(i, line))
         
 def data():
-  # Created a Data class object
-  d = Data(auto93.csv)
-  with open('auto93.csv') as f:
-      reader = csv.reader(f)
-      header = next(reader)
-      data = [row for row in reader]
-  print(header)
-  print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
+    """
+    Load a csv file into data object
+    
+    Returns
+    -------
+    None
+    """ 
+  
+    
+    d = Data(auto93.csv)
+    with open('auto93.csv') as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        data = [row for row in reader]
+    print(header)
+    print(sorted(data, key=lambda x: (x[1], x[2], x[3])))
 
 def stats():
+    """
+    Print stats on columns
+    
+    Returns
+    -------
+    None
+    """ 
     with open('auto93.csv', 'r') as f:
         reader = csv.reader(f, delimiter=',') 
         print("xmid", o( d.stats(2,d.cols.x, mid)))
@@ -111,6 +197,13 @@ def stats():
     
     
 def ALL():
+    """
+    Runs all the tests
+        
+    Returns
+    -------
+    Bool
+    """
     fails=0
     l = LIST()
     for task in l:

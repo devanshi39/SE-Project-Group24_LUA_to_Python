@@ -1,7 +1,8 @@
-src
-====
+LUA_HW
+======
 
 .. toctree::
    :maxdepth: 4
 
-   src
+   code
+   tests
