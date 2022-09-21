@@ -12,8 +12,8 @@ import src
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'ConvLua'
-copyright = '2022, Soha Bhatia, Devanshi Savla, Indranil Banerjee, Akruti Sinha, Aditya Srivastava'
-author = 'Soha Bhatia, Devanshi Savla, Indranil Banerjee, Akruti Sinha, Aditya Srivastava'
+copyright = '2022, Devanshi Savla, Indranil Banerjee, Soha Bhatia Akruti Sinha, Aditya Srivastava'
+author = 'Devanshi Savla, Indranil Banerjee, Soha Bhatia, Akruti Sinha, Aditya Srivastava'
 release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
