@@ -61,7 +61,7 @@ class Sym:
         ----------
         Returns
         -------
-        None
+        int
         """
         most=-1
         for k in self._has:
