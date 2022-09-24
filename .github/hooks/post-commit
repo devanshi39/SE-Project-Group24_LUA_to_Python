@@ -1,7 +1,7 @@
 #!/usr/bin python
 
 import smtplib
-#SERVER = "localhost"
+#SERVER = "localhost" hook test
 
 gmail_user = 'segrp24@gmail.com'
 gmail_password = 'wykbrmxaduhjvhsa'
