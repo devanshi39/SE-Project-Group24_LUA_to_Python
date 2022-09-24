@@ -8,3 +8,8 @@
    cp .github/hooks/post-commit .git/hooks
    ```
 2. Do a commit!
+
+## What do these hooks do
+
+1. pre-commit hook block commits when a file with a non-ASCII file name is added.
+2. post-commit hook runs tests and sends a post-commit notification with the test output to the team.
