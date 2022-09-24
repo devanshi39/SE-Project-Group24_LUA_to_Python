@@ -2,6 +2,7 @@
 
 import smtplib
 from email.mime.text import MIMEText
+from subprocess import check_output
 #SERVER = "localhost"
 
 gmail_user = 'segrp24@gmail.com'
