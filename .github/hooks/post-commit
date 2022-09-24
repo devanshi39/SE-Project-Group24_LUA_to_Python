@@ -13,7 +13,7 @@ log = check_output(['git', 'log', '-1', '--stat', 'HEAD'])
 
 FROM = gmail_user
 
-TO = ['asrivas7@ncsu.edu']
+TO = ['asrivas7@ncsu.edu','sbhatia6@ncsu.edu','ibanerj@ncsu.edu','dksavla@ncsu.edu','asinha6@ncsu.edu']
 
 SUBJECT = 'Post-commit hook execution for SE project'
 
