@@ -3,26 +3,34 @@
 import smtplib
 #SERVER = "localhost"
 
-FROM = 'adityasvat@gmail.com'
+gmail_user = 'segrp24@gmail.com'
+gmail_password = 'wykbrmxaduhjvhsa'
 
-TO = ["asrivas7@ncsu.edu"] # must be a list
+FROM = gmail_user
 
-SUBJECT = "Post-commit hook executed for SE project"
+TO = ['asrivas7@ncsu.edu']
 
-TEXT = "Commit done on SE project"
+SUBJECT = 'Post-commit hook execution for SE project'
 
-# Prepare actual message
+BODY = 'Commit done on SE project"'
 
-message = """\
+email_text = """\
 From: %s
 To: %s
 Subject: %s
 
 %s
-""" % (FROM, ", ".join(TO), SUBJECT, TEXT)
+""" % (FROM, ", ".join(TO), SUBJECT, BODY)
 
-# Send the mail
-
-server = smtplib.SMTP('myserver')
-server.sendmail(FROM, TO, message)
-server.quit()
+try:
+    # server = smtplib.SMTP('localhost')
+    # server.sendmail(FROM, TO, message)
+    # server.quit()
+    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    smtp_server.ehlo()
+    smtp_server.login(gmail_user, gmail_password)
+    smtp_server.sendmail(FROM, TO, email_text)
+    smtp_server.close()
+    print ("Notification sent successfully!")
+except Exception as ex:
+    print ("Post-commit hook fail",ex)
