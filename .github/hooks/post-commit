@@ -17,7 +17,7 @@ TO = ['asrivas7@ncsu.edu']
 
 SUBJECT = 'Post-commit hook execution for SE project'
 
-# Create a plaintext email message
+# Create the plaintext email message
 BODY = MIMEText("Commit done on SE project :\n\n%s" % log)
 
 email_text = """\
