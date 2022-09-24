@@ -1,10 +1,14 @@
-#!/usr/bin python
+#!/usr/bin/env python
 
 import smtplib
+from email.mime.text import MIMEText
 #SERVER = "localhost" hook test
 
 gmail_user = 'segrp24@gmail.com'
 gmail_password = 'wykbrmxaduhjvhsa'
+
+# Get the git log --stat entry of the new commit
+log = check_output(['git', 'log', '-1', '--stat', 'HEAD'])
 
 FROM = gmail_user
 
@@ -12,7 +16,8 @@ TO = ['asrivas7@ncsu.edu']
 
 SUBJECT = 'Post-commit hook execution for SE project'
 
-BODY = 'Commit done on SE project"'
+# Create a plaintext email message
+BODY = MIMEText("Commit done on SE project :\n\n%s" % log)
 
 email_text = """\
 From: %s
@@ -20,7 +25,7 @@ To: %s
 Subject: %s
 
 %s
-""" % (FROM, ", ".join(TO), SUBJECT, BODY)
+""" % (FROM, ", ".join(TO), SUBJECT, BODY.as_string())
 
 try:
     # server = smtplib.SMTP('localhost')
