@@ -2,7 +2,7 @@
 
 import smtplib
 from email.mime.text import MIMEText
-#SERVER = "localhost" hook test
+#SERVER = "localhost"
 
 gmail_user = 'segrp24@gmail.com'
 gmail_password = 'wykbrmxaduhjvhsa'
