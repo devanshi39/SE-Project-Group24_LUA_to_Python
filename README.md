@@ -9,6 +9,7 @@
 ![NPM](https://img.shields.io/npm/l/npm)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7071769.svg)](https://doi.org/10.5281/zenodo.7071769)
 ![GitHub Workflow Status](https://github.com/devanshi39/SE-Project-Group24/actions/workflows/python-app.yml/badge.svg?branch=main)
+[![Code Coverage](https://codecov.io/gh/devanshi39/SE-Project-Group24/branch/main/graphs/badge.svg)](https://codecov.io/gh/devanshi39/SE-Project-Group24/branch/main)
 
 ConvLua is a homework project repository for Group 24's CSC 510, Software Engineering Class. The folders are organized in the following manner:
 LUA HW3 contains all of the primary directories and files. It contains the following files and folders: 
